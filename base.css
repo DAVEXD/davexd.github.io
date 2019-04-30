@@ -1,0 +1,70 @@
+.container > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: #ffeead;
+  background-color: inherit;
+}
+
+html, body {
+  box-sizing: border-box;
+  background-color: blue;
+  color: inherit;
+  height: 100%;
+  padding: 10px;
+  margin: 0px;
+}
+
+.container > div:nth-child(1n) {
+  background-color: #96ceb4;
+  color: inherit;
+}
+
+.container > div:nth-child(3n) {
+  background-color: #88d8b0;
+  color: inherit;
+}
+
+.container > div:nth-child(2n) {
+  background-color: #ff6f69;
+  color: inherit;
+}
+
+.container > div:nth-child(4n) {
+  background-color: #ffcc5c;
+  color: inherit;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+.active {
+  background-color: #4CAF50;
+}
+
+li{
+  display:block;
+float:left;
+padding:0 10px;
+}

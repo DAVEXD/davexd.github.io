@@ -1,0 +1,98 @@
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto 1fr;
+  grid-template-areas: "header header" "section aside" "footer footer";
+  grid-gap: 2px;
+}
+
+header {
+  color: inherit;
+  background-color: blue;
+  grid-area: header;
+}
+
+h1, h2{
+  text-align: center;
+}
+
+div.a {
+    text-align: center;
+   }
+
+
+ul{
+  color: white;
+}
+
+nav {
+  background-color: blue;
+  grid-area: nav;
+}
+
+section {
+  grid-area: section;
+  float: right;
+  color: white;
+}
+
+article {
+  background-color: blue;
+  grid-area: article;
+  background-position: center;
+}
+
+aside {
+  background-color: yellow;
+  grid-area: aside;
+}
+
+footer {
+  background-color: blue;
+  grid-area: footer;
+}
+
+@media screen and (max-width:600px) {
+  body{
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "header header"
+    "section section" "aside aside" "footer footer";
+    grid-gap: 1em 2em;
+  }
+}
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+.active {
+  background-color: #4CAF50;
+}
+
+img#bild1{
+  width: 30%;
+
+}
+
+img#logo{
+  float: right;
+  width: 20%;
+}
